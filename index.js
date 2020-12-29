@@ -33,17 +33,12 @@ function modulo(a){
 
 
 
-let Calculator1=[mult, addd, modulo];
-function actionApplyer(a, b){
-  if (b==[])
-  {return a;}
-  else
-  {
-  let c=b[0](a);
-  let d=b[1](c);
-  return b[2](d);
-  
+let actionApplyer = function(c, d) {
+  let a = c;
+
+  for (let i = 0; i < ray.length; i++ ){
+    a = ray[i](a)
   }
-  
+
+  return a
 }
-actionApplyer(13,Calculator1);
