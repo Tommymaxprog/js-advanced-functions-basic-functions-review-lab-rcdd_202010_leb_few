@@ -36,8 +36,8 @@ function modulo(a){
 let actionApplyer = function(c, d) {
   let a = c;
 
-  for (let i = 0; i < ray.length; i++ ){
-    a = ray[i](a)
+  for (let i = 0; i < d.length; i++ ){
+    a = d[i](a)
   }
 
   return a
